@@ -1,0 +1,17 @@
+services:
+  rap-rag:
+    build: .
+    container_name: rap_rag_server
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus_server
+
+    ports:
+      - "127.0.0.1:9090:9090"
+
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml

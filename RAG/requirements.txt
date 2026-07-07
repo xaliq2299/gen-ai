@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pydantic
+transformers
+sentence-transformers
+faiss-cpu
+torch
+prometheus-fastapi-instrumentator
